@@ -1,0 +1,40 @@
+header {
+	background: url(/assets/images/product/header.jpg) no-repeat center;
+	background-size: cover;
+}
+
+section[role="product"] {
+	h2.title {
+		margin-top: 150px;
+		margin-bottom: 150px;
+		text-align: center;
+	}
+
+	article.product {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+
+		.img > img {
+			width: 100%;
+		}
+
+		.desc {
+			padding-right: 10px;
+			padding-left: 10px;
+			font-size: 2rem;
+			line-height: 3rem;
+		}
+	}
+}
+
+@media ( max-width: 900px ) {
+	section[role="product"] {
+		article.product {
+			margin-top: 100px;
+			margin-bottom: 100px;
+		}
+	}
+}

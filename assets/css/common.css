@@ -1,0 +1,67 @@
+body {
+    font-family: 'Coming Soon';
+    margin: 0;
+    padding: 0;
+}
+header {
+    /*background: url(assets/images/story/header.) center no-repeat;*/
+    background: #F0F0F0;
+    width: vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+footer .intro {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    line-height: 50px;
+}
+footer .intro .email,
+footer .intro .phone {
+    padding-left: 5px;
+}
+footer .icons {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+footer .icons img {
+    transition: 0.3s;
+    line-height: 50px;
+    margin-right: 10px;
+}
+footer .icons img:hover {
+    transform: rotate(20deg);
+}
+button.menu {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: inline-block;
+    transition: 1s;
+}
+button.menu .icon-bar {
+    background-color: #04b4ae;
+    display: block;
+    height: 4px;
+    margin: 0 auto 4px;
+    width: 30px;
+}
+button.menu:hover {
+    transform: rotateY(180deg);
+}

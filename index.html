@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="守護來自大自然的真誠、連結身體的活力、溫柔守護您的健康">
+    <meta property="og:title" content="德信生技台灣官方網站"/>
+    <meta property="og:description" content="守護來自大自然的真誠、連結身體的活力、溫柔守護您的健康" />
+    <meta property="og:image" content="www.healthcome.tw/assets/images/index/index-1.jpg"/>
+    <meta property="og:site_name" content="德信生技"/>
+    <title>首頁 | 德信生技台灣官方網站</title>
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanssc.css" rel="stylesheet">
+    <link href="/assets/css/v2/common.css" rel="stylesheet">
+    <link href="/assets/css/v2/index.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="/assets/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<section role="index">
+    <div class="logo">
+        <img src="/assets/images/logo.png" title="首頁 | 德信生技" alt="首頁 | 德信生技">
+    </div>
+    <ul id="nav_index">
+        <li>
+            <a href="story.html" title="緣起故事 | 德信生技">
+                <span class="en">Story</span>
+                <span class="ch">起源故事</span>
+            </a>
+        </li>
+        <li>
+            <a href="about.html" title="關於我們 | 德信生技">
+                <span class="en">About</span>
+                <span class="ch">關於我們</span>
+            </a>
+        </li>
+        <li>
+            <a href="products.html" title="精選品牌 | 德信生技">
+                <span class="en">Products</span>
+                <span class="ch">精選品牌</span>
+            </a>
+        </li>
+        <li>
+            <a href="news.html" title="最新消息 | 德信生技">
+                <span class="en">News</span>
+                <span class="ch">最新消息</span>
+            </a>
+        </li>
+    </ul>
+</section>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+var num = 1
+function autoChangeBgImages() {
+    setTimeout(function() {
+        if ( num > 3 ) {
+            num = 1
+        } else {
+            num++
+        }
+        var image = '/assets/images/index/index-'+num+'.jpg'
+        $('section[role="index"]').css({
+            'background-image': 'url(' +image+ ')',
+        })
+        autoChangeBgImages()
+    }, 3000)
+}
+autoChangeBgImages()
+
+$('#nav_index').on('click', 'a', function(e) {
+    if ( $(this).attr('href') == 'news.html' ) {
+        e.preventDefault()
+    }
+})
+</script>
+</body>
+</html>
