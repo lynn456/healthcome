@@ -1,0 +1,26 @@
+header {
+	background: url(/assets/images/news/header.jpg) center no-repeat;
+	background-size: 100% auto;
+	background-position: top;
+}
+
+section[role="news"] {
+	main {
+		min-height: 400px;
+	}
+
+	ul.data {
+		list-style-type: none;
+		margin-top: 100px;
+	}
+}
+
+@media ( max-width: 700px ) {
+	section[role="news"] {
+		ul.data {
+			list-style-type: none;
+			margin-top: 30px;
+			margin-bottom: 100px;
+		}
+	}
+}

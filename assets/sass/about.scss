@@ -22,10 +22,18 @@ section[role="about"] {
 	}
 
 	article[role="t3"] {
-		p {
-			font-size: 2.5rem;
-			text-align: center;
-			line-height: 200px;
+		a {
+			text-decoration: none;
+			color: rgba(0,162,154,0.8);
+			
+			&:hover {
+				text-decoration: none;
+			}
+			p {
+				font-size: 2.5rem;
+				text-align: center;
+				line-height: 200px;
+			}
 		}
 	}
 
